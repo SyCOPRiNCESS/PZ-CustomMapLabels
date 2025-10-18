@@ -1,0 +1,9 @@
+UI_CN = {
+    UI_CML_PanelTitle = "自定义地图标签",
+    UI_CML_MasterSwitch_Text = "启用自定义地图标签",
+    UI_CML_MasterSwitch_Tooltip = "总开关。如果取消勾选，此模组提供的所有标签（包括其他模组和原版）都将不会显示。",
+    UI_CML_EnableModLabels_Text = "启用模组地图标签",
+    UI_CML_EnableModLabels_Tooltip = "如果勾选，将显示来自其他地图模组的标签。需要刷新才能生效。",
+    UI_CML_EnableVanilla_Text = "启用原版地图标签",
+    UI_CML_EnableVanilla_Tooltip = "如果勾选，将显示原版游戏地点的标签。需要刷新才能生效。",
+}

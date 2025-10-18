@@ -148,4 +148,13 @@ MapLabel_EN = {
     MapLabel_Willowbrook_Bastion = "Willowbrook Bastion",
     MapLabel_WreckingYardWillowbrook_Bastion = "Wrecking<br>Yard",
 
+------Vanilla Wrecking Yards-----	
+	MapLabel_WreckingYardEchoCreek = "Wrecking<br>Yard",
+	MapLabel_WreckingYardIrvingtonSNL = "Wrecking<br>Yard",
+	MapLabel_WreckingYardIrvington = "Wrecking<br>Yard",
+	MapLabel_WreckingYardLouisville = "Wrecking<br>Yard",
+	MapLabel_WreckingYardMuldraugh = "Wrecking<br>Yard",
+	MapLabel_WreckingYardRiverside = "Wrecking<br>Yard",
+	MapLabel_WreckingYardValleyStation = "Wrecking<br>Yard",
+
 }

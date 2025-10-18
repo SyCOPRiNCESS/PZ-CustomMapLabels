@@ -1,0 +1,9 @@
+UI_EN = {
+    UI_CML_PanelTitle = "Custom Map Labels",
+    UI_CML_MasterSwitch_Text = "Enable Custom Map Labels",
+    UI_CML_MasterSwitch_Tooltip = "Master switch. If unchecked, no labels from this mod (neither modded nor vanilla) will be displayed.",
+    UI_CML_EnableModLabels_Text = "Enable Mod Labels",
+    UI_CML_EnableModLabels_Tooltip = "If checked, labels from other mods will be displayed. Requires a refresh to take effect.",
+    UI_CML_EnableVanilla_Text = "Enable Vanilla Labels",
+    UI_CML_EnableVanilla_Tooltip = "If checked, labels for vanilla locations will be displayed. Requires a refresh to take effect.",
+}

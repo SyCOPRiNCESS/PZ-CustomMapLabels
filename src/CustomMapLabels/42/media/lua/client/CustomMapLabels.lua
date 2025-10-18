@@ -1,7 +1,27 @@
 local CustomMapLabels = {}
 
-local MapLabelData = require("MapLabelData")
-local ModMapLabels = MapLabelData and MapLabelData.ModMapLabels
+-- 加载分离后的数据文件
+local DefaultsData = require("LabelDefaults")
+local ModData = require("MapLabelData")
+local VanillaData = require("VanillaLabelData")
+
+-- 从各自的文件中提取数据表
+local MapDefaults = (DefaultsData and DefaultsData.Defaults) or {}
+local AllMapLabels = {}
+
+-- 1. 合并所有 Mod 的标签
+if ModData and ModData.ModMapLabels then
+    for modName, labels in pairs(ModData.ModMapLabels) do
+        AllMapLabels[modName] = labels
+    end
+end
+
+-- 2. 合并原版游戏的标签
+if VanillaData and VanillaData.VanillaMapLabels then
+    for modName, labels in pairs(VanillaData.VanillaMapLabels) do
+        AllMapLabels[modName] = labels
+    end
+end
 
 function CustomMapLabels.processLabelData(rawData, defaults)
     if not rawData or not defaults then return {} end
@@ -55,23 +75,50 @@ function CustomMapLabels.processAllMapLabels()
 	if not mapAPI then return end
 	local symAPI = mapAPI:getSymbolsAPIv2()
     if not symAPI then return end
-	local FullModMapLabels = CustomMapLabels.processLabelData(ModMapLabels, MapLabelData.Defaults)
+	local FullModMapLabels = CustomMapLabels.processLabelData(AllMapLabels, MapDefaults)
 	
 	local managedKeys = {}
 	local managedKeysLookup = {}
     local activeModLabels = {}
+
+    -- 如果选项文件尚未加载，则提供默认值
+    CML_Options = CML_Options or {}
+    CML_Options.masterSwitch = CML_Options.masterSwitch or { value = true }
+    CML_Options.enableModLabels = CML_Options.enableModLabels or { value = true }
+    CML_Options.enableVanilla = CML_Options.enableVanilla or { value = false }
+
 	if FullModMapLabels then
+        -- 构建一个包含所有受本模组管理的标签键的完整列表。
 		for modId, labels in pairs(FullModMapLabels) do
-			if getActivatedMods():contains(modId) or modId == "Vanilla" then
-                table.insert(activeModLabels, labels)
-				for _, data in ipairs(labels) do
-					if data.key then
-						managedKeys[data.key] = true
-						managedKeysLookup[string.lower(data.key)] = data.key
-					end
-				end
-			end
+            if getActivatedMods():contains(modId) or modId == "Vanilla" then
+			    for _, data in ipairs(labels) do
+				    if data.key then
+					    managedKeys[data.key] = true
+					    managedKeysLookup[string.lower(data.key)] = data.key
+				    end
+			    end
+            end
 		end
+
+        -- 第二步：根据当前选项，构建需要激活（显示）的标签列表。
+        if CML_Options.masterSwitch.value then
+            for modId, labels in pairs(FullModMapLabels) do
+                local shouldAdd = false
+                if modId == "Vanilla" then
+                    if CML_Options.enableVanilla.value then
+                        shouldAdd = true
+                    end
+                elseif getActivatedMods():contains(modId) then
+                    if CML_Options.enableModLabels.value then
+                        shouldAdd = true
+                    end
+                end
+
+                if shouldAdd then
+                    table.insert(activeModLabels, labels)
+                end
+            end
+        end
 	end
 
 	local indicesToRemove = {}
