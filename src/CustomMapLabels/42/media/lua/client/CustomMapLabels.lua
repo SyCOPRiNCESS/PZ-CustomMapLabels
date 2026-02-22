@@ -65,6 +65,28 @@ function CustomMapLabels.generateKeyFromText(text)
 	return string.lower("MapLabel_" .. sanitizedText)
 end
 
+function CustomMapLabels.normalizeModId(modId)
+	if not modId then return "" end
+	-- 去除所有非字母并转为小写
+	return modId:gsub("%W", ""):lower()
+end
+
+function CustomMapLabels.isModActivated(targetModId)
+	local activatedMods = getActivatedMods()
+	if activatedMods:contains(targetModId) then
+		return true
+	end
+
+	local targetNormalized = CustomMapLabels.normalizeModId(targetModId)
+	for i=0, activatedMods:size()-1 do
+		local modId = activatedMods:get(i)
+		if CustomMapLabels.normalizeModId(modId) == targetNormalized then
+			return true
+		end
+	end
+	return false
+end
+
 function CustomMapLabels.processAllMapLabels()
 	if not ISWorldMap_instance then
 		ISWorldMap.ShowWorldMap(0)
@@ -90,7 +112,7 @@ function CustomMapLabels.processAllMapLabels()
 	if FullModMapLabels then
         -- 构建一个包含所有受本模组管理的标签键的完整列表。
 		for modId, labels in pairs(FullModMapLabels) do
-            if getActivatedMods():contains(modId) or modId == "Vanilla" then
+            if CustomMapLabels.isModActivated(modId) or modId == "Vanilla" then
 			    for _, data in ipairs(labels) do
 				    if data.key then
 					    managedKeys[data.key] = true
@@ -100,7 +122,7 @@ function CustomMapLabels.processAllMapLabels()
             end
 		end
 
-        -- 第二步：根据当前选项，构建需要激活（显示）的标签列表。
+        -- 根据当前选项，构建需要激活（显示）的标签列表。
         if CML_Options.masterSwitch.value then
             for modId, labels in pairs(FullModMapLabels) do
                 local shouldAdd = false
@@ -108,7 +130,7 @@ function CustomMapLabels.processAllMapLabels()
                     if CML_Options.enableVanilla.value then
                         shouldAdd = true
                     end
-                elseif getActivatedMods():contains(modId) then
+                elseif CustomMapLabels.isModActivated(modId) then
                     if CML_Options.enableModLabels.value then
                         shouldAdd = true
                     end

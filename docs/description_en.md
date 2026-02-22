@@ -69,6 +69,17 @@ Thanks to: 无聊的栀子 for providing a large number of map label coordinates
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3499861271]White Wolf Ridge[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3479667649]Willowbrook Bastion[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3638880637]Yanghu Town[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3666180085]Dawn Town[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3580819781]Safe Zone-Chinese Survivors’ Community[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3659676359]Anruisi Town[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3659221974]White forest ridge[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3665994726]Delta-Creek-Munitions[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3662265843]S.T.A.B Bunker[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3636964628]Uncle Red's Bunker[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3670395687]SerenityBunker[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3666566299]BLACKSTONE[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3649786938]Mockingbird[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3649120915]Lab Road[/url]
 
 
 [hr][/hr]

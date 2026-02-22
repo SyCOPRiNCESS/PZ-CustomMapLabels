@@ -69,6 +69,17 @@
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3499861271]White Wolf Ridge[/url](白狼岭)
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3479667649]Willowbrook Bastion[/url](柳溪镇)
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3638880637]Yanghu Town[/url](杨湖镇)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3666180085]Dawn Town[/url](拂晓镇)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3580819781]Atlanta - Safe Zone-Chinese Survivors’ Community[/url](亚特兰大华人社区)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3659676359]Anruisi Town[/url](安瑞斯镇)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3659221974]White forest ridge[/url](白森岭)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3665994726]Delta-Creek-Munitions[/url](德尔塔河弹药工厂)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3662265843]S.T.A.B Bunker[/url](S.T.A.B “尖刺” 通讯站)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3636964628]Uncle Red's Bunker[/url](红叔地堡)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3670395687]SerenityBunker[/url](宁静地堡)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3666566299]BLACKSTONE[/url](黑石国家公园)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3649786938]Mockingbird[/url](知更鸟镇)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3649120915]Lab Road[/url](研究所道路)
 
 [hr][/hr]
 [h1][b] 兼容性: [/b][/h1]

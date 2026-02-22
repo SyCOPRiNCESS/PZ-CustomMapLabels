@@ -7,7 +7,7 @@ data.ModMapLabels = {
 	},
 	---Willowbrook Bastion![柳溪镇]---(3479667649)---
 	["\\Willowbrook Bastion!"] = {
-		{ key = "MapLabel_Willowbrook_Bastion",  x = 9153,  y = 9879,  type = "Town", scale = 4.5 },
+		{ key = "MapLabel_Willowbrook_Bastion",  x = 9100,  y = 9885,  type = "Town", scale = 4.5 },
 		{ key = "MapLabel_WreckingYardWillowbrook_Bastion",	x = 8790,  y = 9635, type = "POI", scale = 0.3 },
 	},
 	---Asakusa lake town[浅草湖镇]---(3482962418)---
@@ -61,7 +61,7 @@ data.ModMapLabels = {
 		{ key = "MapLabel_HazelnutManor",        x = 12735, y = 6230,  type = "Town", scale = 2.5 },
 	},
 	---Hazelnut Manor (Poor Version)[榛果庄园无物资版]---(3495993590)---
-	["\\Hazelnut Manor[Poor Version]"] = {
+	["\\HazelnutManor[Poor Version]"] = {
 		{ key = "MapLabel_HazelnutManor",        x = 12735, y = 6230,  type = "Town", scale = 2.5 },
 	},
 	---Kingsmouth[王口岛]---(3498269494)---
@@ -74,7 +74,7 @@ data.ModMapLabels = {
 	},
 	---White Forest[白森林]---(3519054686)---
 	["\\linzimod"] = {
-		{ key = "MapLabel_WhiteForest",          x = 9586,  y = 11369, type = "Town" },
+		{ key = "MapLabel_WhiteForest",          x = 9605,  y = 11369, type = "Town" },
 	},
 	---Little Township[小马驹镇]---(3477336014)---
 	["\\LittleTownshipB42"] = {
@@ -119,7 +119,7 @@ data.ModMapLabels = {
 	},
 	---SafeWay Hamlet[途安里]---(3533315055)---
 	["\\SafeWayHamlet"] = {
-		{ key = "MapLabel_SafeWayHamlet",        x = 12718, y = 11255, type = "Town", scale = 3.0 },
+		{ key = "MapLabel_SafeWayHamlet",        x = 12770, y = 11280, type = "Town", scale = 3.0 },
 	},
 	---Sector-7 Breach[七号沦陷区]---(3513107552)---
 	["\\Sector-7 Breach"] = {
@@ -225,7 +225,7 @@ data.ModMapLabels = {
     },
 	---Frogtown[青蛙镇]---(3449473111)---
 	["\\Frogtown"] = {
-		{ key = "MapLabel_Frogtown", x = 3400, y = 7032, type = "Town", scale = 4.5 },
+		{ key = "MapLabel_Frogtown", x = 3400, y = 7165, type = "Town", scale = 4.5 },
 	},
 	---Brink[布林克镇]---(3551791831)---
 	["\\Brink"] = {
@@ -278,7 +278,7 @@ data.ModMapLabels = {
     },
 	---Greenleaf B42 version[绿叶镇 B42版本]---(3602388131)---
     ["\\Greenleaf B42 version"] = {
-        {key = "MapLabel_GreenleafB42",    x = 6600,y = 10509, type = "Town", scale = 3.5 },
+        {key = "MapLabel_GreenleafB42",    x = 6590,y = 10509, type = "Town", scale = 4.0 },
     },
 	---GTA 6 - Jason's house - B42[杰森的房子]---(3594561992)---
     ["\\GTAJasonsHouse"] = {
@@ -306,7 +306,7 @@ data.ModMapLabels = {
     },
 	---Yanghu Town[杨湖镇]---(3638880637)---
     ["\\Yanghu Town"] = {
-        {key = "MapLabel_YanghuTown",    x = 9105,y = 9253, type = "Town", scale = 4.5 },
+        {key = "MapLabel_YanghuTown",    x = 9100,y = 9253, type = "Town", scale = 4.5 },
     },
 	---Shamrock Farm[三叶草农场]---(3629346494)---
     ["\\ShamrockFarm"] = {
@@ -318,7 +318,55 @@ data.ModMapLabels = {
     },
 	---Maplewood [枫木镇]---(3644794945)---
     ["\\Maplewood"] = {
-        {key = "MapLabel_Maplewood",    x = 8275,y = 8560, type = "Town", scale = 2.3 },
+        {key = "MapLabel_Maplewood",    x = 8275,y = 8560, type = "Town", },
+    },
+	---Dawn Town[拂晓镇]---(3666180085)---
+    ["\\dawn_town"] = {
+        {key = "MapLabel_DawnTown",    x = 3128,y = 8256, type = "Town", },
+    },
+	---Atlanta - Safe Zone-Chinese Survivors’ Community[亚特兰大华人社区]---(3580819781)---
+    ["\\Atlanta - Safe Zone-Chinese Survivors’ Community"] = {
+        { key = "MapLabel_AtlantaCN",    x = 8860,  y = 8260, type = "Town", scale = 2.3 },
+    },
+	---Anruisi Town[安瑞斯镇]---(3659676359)---
+	["\\AnruisiTown"] = {
+		{ key = "MapLabel_AnruisiTown",   x = 12315, y = 11700, type = "Town", scale = 5.0 },
+	},
+	---White forest ridge[白森岭]---(3659221974)---
+	["\\White_forest_ridge"] = {
+		{ key = "MapLabel_WhiteForestRidge",          x = 9605,  y = 12200, type = "Town" },
+	},
+	---Delta-Creek-Munitions[德尔塔河弹药工厂]---(3665994726)---
+    ["\\Delta-Creek-Munitions"] = {
+        {key = "MapLabel_DeltaCreek",    x = 6360,y = 8420, type = "Town", scale = 2.3 },
+    },
+	---S.T.A.B Bunker[S.T.A.B “尖刺” 通讯站]---(3662265843)---
+    ["\\idStabBunker"] = {
+        {key = "MapLabel_StabBunker",    x = 13120,y = 6730, type = "Town", scale = 1.5 },
+    },
+	---Uncle Red's Bunker[红叔地堡]---(3636964628)---
+    ["\\Uncleredsbunkerb42"] = {
+        {key = "MapLabel_Uncleredsbunkerb42",    x = 11010,y = 10890, type = "Town", scale = 1.5 },
+    },
+	---Uncle Red's Bunker[红叔地堡]---(3636964628)---
+    ["\\UncleRedsBunkerRedux"] = {
+        {key = "MapLabel_UncleRedsBunkerRedux",    x = 11010,y = 10890, type = "Town", scale = 1.5 },
+    },
+	---SerenityBunker[宁静地堡]---(3670395687)---
+    ["\\serenitybunker"] = {
+        {key = "MapLabel_serenitybunker",    x = 4680,y = 9360, type = "Town", scale = 2.0 },
+    },
+	---BLACKSTONE[黑石国家公园]---(3666566299)---
+    ["\\BlackstoneMapMod"] = {
+        {key = "MapLabel_BLACKSTONE",    x = 15935,y = 7485, type = "Town", scale = 6.0 },
+    },
+	---PZ Mockingbird[知更鸟镇]---(3649786938)---
+    ["\\Mockingbird"] = {
+        {key = "MapLabel_Mockingbird",    x = 10350,y = 13045, type = "Town", scale = 2.0 },
+    },
+	---Lab Road[生化研究所道路拓展]---(3649120915)---
+    ["\\LAB Road"] = {
+        {key = "MapLabel_LABRoad",    x = 6107,y = 12487, type = "Town", scale = 2.0 },
     }
 }
 return data
